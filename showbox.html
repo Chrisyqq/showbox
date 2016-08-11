@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
     	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/breakdown.css">
     	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     	<script type="text/javascript" src="js/bootstrap.js"></script>
         <meta charset="utf-8">
@@ -9,47 +10,155 @@
     <body>
 
 <!-- Button to trigger modal -->
-<a href="#myModal" role="button" class="btn" data-toggle="modal">按钮一</a>
+<a href="#myModalone" role="button" class="btn" data-toggle="modal">按钮一</a>
  
 <!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="myModalone" class="modal hide fade mymodal-one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h3 id="myModalLabel">王博</h3>
   </div>
   <div class="modal-body">
-    <p>王博第一个</p>
+
+    <div class="modal-body-top">
+      <div class="control-group pull-left">
+        <div class="controls">
+          <span class="help-inline">出发节点</span>
+          <input type="text" id="inputWarning">      
+        </div>
+      </div>
+      <div class="control-group pull-left">
+        <div class="controls">
+          <span class="help-inline">目的节点</span>
+          <input type="text" id="inputWarning">      
+        </div>
+      </div>   
+    </div>
+
+    <div class="modal-body-middle">
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="modal-body-bottom">
+      <div class="modal-body-bottom-left pull-left">
+        <table class="table table-bordered table-one">
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>版本</th>
+                    <th>备注</th>
+                    <th>操作</th>                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">网元能力1</th>
+                    <td>1</td>
+                    <td>xxxxxx</td>
+                    <td>                    
+                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
+                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">网元能力2</th>
+                    <td>2</td>
+                    <td>xxxxxx</td>
+                    <td>                    
+                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
+                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered table-two">
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>版本</th>
+                    <th>备注</th>
+                    <th>操作</th>                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">网元能力1</th>
+                    <td>1</td>
+                    <td>xxxxxx</td>
+                    <td>                    
+                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
+                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">网元能力2</th>
+                    <td>2</td>
+                    <td>xxxxxx</td>
+                    <td>                    
+                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
+                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="modal-body-bottom-right pull-right">
+        
+        <table class="table table-bordered table-three">
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>版本</th>
+                    <th>备注</th>
+                    <th>操作</th>                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">网元能力1</th>
+                    <td>1</td>
+                    <td>xxxxxx</td>
+                    <td>                    
+                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
+                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">网元能力2</th>
+                    <td>2</td>
+                    <td>xxxxxx</td>
+                    <td>                    
+                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
+                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+    
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     <button class="btn btn-primary">Save changes</button>
   </div>
-</div>
-
-<!-- Button to trigger modal -->
-<a href="#myModalone" role="button" class="btn" data-toggle="modal">按钮二</a>
- 
-<!-- Modal -->
-<div id="myModalone" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">王博</h3>
-  </div>
-  <div class="modal-body">
-    <p>王博第二个</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
-  </div>
+    </div>    
 </div>
 
 
 <!-- Button to trigger modal -->
-<a href="#myModatwo" role="button" class="btn" data-toggle="modal">按钮三</a>
+<a href="#myModaltwo" role="button" class="btn" data-toggle="modal">按钮三</a>
  
 <!-- Modal -->
-<div id="myModatwo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="myModaltwo" class="modal hide fade mymodal-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h3 id="myModalLabel">王博</h3>
@@ -65,10 +174,10 @@
 
 
 <!-- Button to trigger modal -->
-<a href="#myModathree" role="button" class="btn" data-toggle="modal">按钮四</a>
+<a href="#myModalthree" role="button" class="btn" data-toggle="modal">按钮四</a>
  
 <!-- Modal -->
-<div id="myModathree" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="myModalthree" class="modal hide fade mymodal-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h3 id="myModalLabel">王博</h3>
