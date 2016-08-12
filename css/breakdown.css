@@ -2,7 +2,7 @@
 * @Author: chrisyqq
 * @Date:   2016-08-11 16:17:55
 * @Last Modified by:   chrisyqq
-* @Last Modified time: 2016-08-11 17:28:58
+* @Last Modified time: 2016-08-12 11:31:54
 */
 
 .modal{
@@ -11,9 +11,56 @@
 }
 /* 尖头 */
 .mymodal-one .modal-body-top{
-	height: 60px;
+	height: 40px;
+	width: 100% !important;
 	border-bottom: 1px solid #dddddd;
+}
+.mymodal-one .modal-body-top span{
+	margin-right: 10px;
+	margin-top: -10px;
 }
 .mymodal-one .modal-body-bottom-left{
 	width: 40%;
+	padding-top: 10px;
+}
+.mymodal-one .modal-body-bottom-right{
+	width: 58%;
+	padding-top: 10px;
+}
+.mymodal-one .modal-body-middle{
+	width: 100%;
+	height: 40px;
+	line-height: 30px;
+	float: left;
+	border-bottom: 1px solid #dddddd;
+}
+.mymodal-one .modal-body-middle span{
+	margin-top: 2px;
+	float: left;
+	margin-right: 10px;
+}
+.mymodal-one .modal-body-bottom-right select{
+	width: 100% !important;
+}
+
+/* 出发 */
+.mymodal-three .modal-body-top{
+	width: 100%;
+	min-height: 162px;
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 10px;  
+}
+.mymodal-three .modal-body-top .modal-body-top-left{
+	width: 48%;
+	margin-right: 2%;
+}
+.mymodal-three .modal-body-top .modal-body-top-right{
+	width: 48%;
+}
+.mymodal-three .modal-body-top table{
+	margin-top: 10px;
+}
+.mymodal-three .modal-body-bottom table{
+
+	margin-top: 10px;
 }

@@ -14,10 +14,6 @@
  
 <!-- Modal -->
 <div id="myModalone" class="modal hide fade mymodal-one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">王博</h3>
-  </div>
   <div class="modal-body">
 
     <div class="modal-body-top">
@@ -36,24 +32,24 @@
     </div>
 
     <div class="modal-body-middle">
+      <span>条件</span>
       <select>
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
-        <option>5</option>
       </select>
     </div>
 
     <div class="modal-body-bottom">
       <div class="modal-body-bottom-left pull-left">
+        <span class="help-inline">出发节点出参</span>
         <table class="table table-bordered table-one">
             <thead>
                 <tr>
-                    <th>名称</th>
-                    <th>版本</th>
+                    <th>参数名</th>
                     <th>备注</th>
-                    <th>操作</th>                
+                    <th>类型</th>              
                 </tr>
             </thead>
             <tbody>
@@ -61,30 +57,23 @@
                     <th scope="row">网元能力1</th>
                     <td>1</td>
                     <td>xxxxxx</td>
-                    <td>                    
-                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
-                        <button class="btn btn-middle btn-primary" type="button">删除</button>
-                    </td>
                 </tr>
                 <tr>
                     <th scope="row">网元能力2</th>
                     <td>2</td>
                     <td>xxxxxx</td>
-                    <td>                    
-                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
-                        <button class="btn btn-middle btn-primary" type="button">删除</button>
-                    </td>
                 </tr>
             </tbody>
         </table>
 
+        <span class="help-inline">续传参数</span>
+
         <table class="table table-bordered table-two">
             <thead>
                 <tr>
-                    <th>名称</th>
-                    <th>版本</th>
+                    <th>参数名</th>
                     <th>备注</th>
-                    <th>操作</th>                
+                    <th>类型</th>               
                 </tr>
             </thead>
             <tbody>
@@ -92,32 +81,26 @@
                     <th scope="row">网元能力1</th>
                     <td>1</td>
                     <td>xxxxxx</td>
-                    <td>                    
-                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
-                        <button class="btn btn-middle btn-primary" type="button">删除</button>
-                    </td>
                 </tr>
                 <tr>
                     <th scope="row">网元能力2</th>
                     <td>2</td>
                     <td>xxxxxx</td>
-                    <td>                    
-                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
-                        <button class="btn btn-middle btn-primary" type="button">删除</button>
-                    </td>
                 </tr>
             </tbody>
         </table>
       </div>
       <div class="modal-body-bottom-right pull-right">
-        
+
+        <span class="help-inline">目的节点入参</span>
+
         <table class="table table-bordered table-three">
             <thead>
                 <tr>
-                    <th>名称</th>
-                    <th>版本</th>
+                    <th>参数名</th>
                     <th>备注</th>
-                    <th>操作</th>                
+                    <th>类型</th> 
+                    <th>对接参数</th>                
                 </tr>
             </thead>
             <tbody>
@@ -125,30 +108,38 @@
                     <th scope="row">网元能力1</th>
                     <td>1</td>
                     <td>xxxxxx</td>
-                    <td>                    
-                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
-                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    <td>
+                       <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">网元能力2</th>
                     <td>2</td>
                     <td>xxxxxx</td>
-                    <td>                    
-                        <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查看</button>
-                        <button class="btn btn-middle btn-primary" type="button">删除</button>
+                    <td>
+                      <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
                     </td>
                 </tr>
             </tbody>
         </table>
       </div>
     </div>
-
-    
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">闭关</button>
+    <button class="btn btn-primary">保存</button>
   </div>
     </div>    
 </div>
@@ -159,16 +150,45 @@
  
 <!-- Modal -->
 <div id="myModaltwo" class="modal hide fade mymodal-two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">王博</h3>
-  </div>
   <div class="modal-body">
-    <p>王博第三个</p>
+    <form class="form-search">
+    <span>网元能力搜索：</span>
+      <div class="input-append">
+        <input type="text" class="span2 search-query">
+        <button type="submit" class="btn">搜索</button>
+      </div>
+    </form>
+    <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>网元能力名称</th>
+              <th>网元能力备注</th>
+              <th>操作</th>                
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th scope="row">网元能力1</th>
+              <td>1</td>
+              <td>                    
+                  <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查询详情</button>
+                  <button class="btn btn-middle btn-primary" type="button">添加到模型</button>
+              </td>
+          </tr>
+          <tr>
+              <th scope="row">网元能力2</th>
+              <td>2</td>
+              <td>                    
+                  <button class="btn btn-middle btn-primary" data-toggle="modal" data-target="#myModal" type="button">查询详情</button>
+                  <button class="btn btn-middle btn-primary" type="button">添加到模型</button>
+              </td>
+          </tr>
+      </tbody>
+    </table>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">闭关</button>
+    <button class="btn btn-primary">保存</button>
   </div>
 </div>
 
@@ -178,16 +198,85 @@
  
 <!-- Modal -->
 <div id="myModalthree" class="modal hide fade mymodal-three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">王博</h3>
-  </div>
   <div class="modal-body">
-    <p>王博第四个</p>
+    <div class="modal-body-top">
+      <div class="modal-body-top-left pull-left">
+        <span>出发节点出参</span>
+         <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>参数名</th>
+                  <th>类型</th>
+                  <th>描述</th>                
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">reply</th>
+                  <td>Boolean</td>
+                  <td>执行结果</td>
+              </tr>
+              <tr>
+                  <th scope="row">reply</th>
+                  <td>Boolean</td>
+                  <td>执行结果</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-body-top-left pull-left">
+      <span>续传参数</span>
+         <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th>参数名</th>
+                  <th>类型</th>
+                  <th>描述</th>                
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">reply</th>
+                  <td>Boolean</td>
+                  <td>执行结果</td>
+              </tr>
+              <tr>
+                  <th scope="row">reply</th>
+                  <td>Boolean</td>
+                  <td>执行结果</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-body-bottom">
+      <button class="btn btn-primary">添加条件</button>
+      <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>描述</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">reply</th>
+                <td>Boolean</td>
+                <td>执行结果</td>
+            </tr>
+            <tr>
+                <th scope="row">reply</th>
+                <td>Boolean</td>
+                <td>执行结果</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">闭关</button>
+    <button class="btn btn-primary">保存</button>
   </div>
 </div>
 
